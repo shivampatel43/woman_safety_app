@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvComplaintTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Register Complaint"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/etYourName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        app:layout_constraintTop_toBottomOf="@id/tvComplaintTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/etIncidentDetails"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:hint="Incident Details"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@id/etYourName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etComplaintEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Authority / Guardian Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/etIncidentDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSubmitComplaint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit Complaint (E-Mail)"
+        app:layout_constraintTop_toBottomOf="@id/etComplaintEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
